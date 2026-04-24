@@ -23,7 +23,7 @@
 
 == Summary
 
-Senior software engineer with 10+ years across fintech, real estate, biochem research, and government. Deep Python / Pandas expertise, strong on-call track record, and a focus on safely building, maintaining, and refactoring high-volume ETL pipelines in production. Loves game development.
+Senior software engineer, 10+ years across fintech, real estate, government, and research. Deep Python/Pandas expertise, strong on-call track record, focused on safely building and refactoring high-volume ETL pipelines. Loves game development.
 
 == Work Experience
 
@@ -33,11 +33,11 @@ Senior software engineer with 10+ years across fintech, real estate, biochem res
   company: "Nomura (formerly Macquarie Group)",
   dates: dates-helper(start-date: "Sep 2025", end-date: "Present"),
 )
-- Rewrote the investment team's security master pipeline with Airflow and Pandas, migrating it off LUSID and improving performance; the DAG now processes hundreds of thousands of securities in minutes, something the original pipeline was not capable of
-- Ported several AWS Lambdas over to Airflow DAGs, simplifying the upstream architecture
-- Led regular check-ins with stakeholders from the business to ensure alignment and performed thorough regression testing for data correctness and completeness
-- Maintained and refactored production Airflow ETL pipelines responsible for consolidating data from a variety of vendors and sources, implemented several idempotent task redesigns
-- Consistent on-call contributor: triaged and resolved pipeline incidents, and drove post-incident fixes into the DAG to prevent recurrence
+- Ported the investments' securities master off LUSID to Airflow + Pandas; performance-focused second pass now processes hundreds of thousands of securities in minutes
+- Consolidated several AWS Lambdas into Airflow DAGs, shrinking the upstream surface and simplifying architecture
+- Ran stakeholder alignment check-ins with the business; performed regression testing for data correctness and completeness
+- Maintained and refactored production Airflow ETL pipelines processing multi-vendor data; delivered idempotent task redesigns
+- On-call contributor: triaged and resolved pipeline incidents, driving post-incident fixes back into the DAGs
 - Tools: Python, Pandas, Apache Airflow, AWS (Lambda, S3), Microsoft SQL Server, Splunk
 
 #work(
@@ -46,20 +46,20 @@ Senior software engineer with 10+ years across fintech, real estate, biochem res
   company: "Capital One",
   dates: dates-helper(start-date: "Dec 2022", end-date: "Jun 2025"),
 )
-- Led migration to a new KYC vendor, projected to save millions in operational costs while reducing concurrent vendor calls
-- Led integration of live selfie-based image fraud detection for bank customers, coordinating features and timelines across multiple teams
-- Spearheaded infrastructure migration for identity verification microservices, driving system architecture design through multiple rounds of review with lead architects
-- Designed a high-performance integration testing strategy that cleanly set up scenarios inside a mature internal ecosystem
-- Tools: Angular, AWS, Java, JavaScript, Python, Splunk, TypeScript
+- Led migration to a new KYC vendor; projected millions in annual operational savings and reduced concurrent vendor calls
+- Shipped live selfie-based image fraud detection for bank customers, coordinating delivery across multiple teams
+- Drove infrastructure migration for identity verification microservices through multiple architect review cycles
+- Designed a high-performance integration test strategy using Playwright for scenario setup inside a mature internal ecosystem
+- Tools: Angular, AWS, Java, JavaScript, Python, Splunk, TypeScript, Playwright
 
 #work(
   title: "Full-Stack Software Engineer",
-  location: "New York, NY",
+  location: "Philadelphia, PA",
   company: "Compass",
   dates: dates-helper(start-date: "Dec 2021", end-date: "Sep 2022"),
 )
-- Developed and maintained back-end microservices handling TBs of geospatial property data, with comprehensive end-to-end and performance testing
-- Collaborated closely with geospatial analysts to build internal tooling around their workflows
+- Built and maintained back-end microservices handling TBs of geospatial property data, with end-to-end and performance test coverage
+- Partnered with geospatial analysts on internal tooling around their workflows
 - Tools: AWS, Bazel, Java, Kafka, PostgreSQL, Python, Resilience4J, Thrift RPC
 
 #work(
@@ -68,8 +68,8 @@ Senior software engineer with 10+ years across fintech, real estate, biochem res
   company: "Pennsieve (PromptWorks)",
   dates: dates-helper(start-date: "Mar 2021", end-date: "May 2021"),
 )
-- Integrated back-end APIs for user management with AWS Cognito
-- Updated a Python CLI and Rust daemon to work against the Cognito-integrated back-end
+- Integrated user-management APIs with AWS Cognito
+- Updated a Python CLI and Rust daemon for the Cognito-backed back end
 - Tools: AWS Cognito, Python, Rust, Scala, Terraform
 
 #work(
@@ -78,8 +78,8 @@ Senior software engineer with 10+ years across fintech, real estate, biochem res
   company: "Department of Defense ATAT (PromptWorks)",
   dates: dates-helper(start-date: "Mar 2020", end-date: "Feb 2021"),
 )
-- Developed the back end for managing cloud resources for government employees
-- Owned deployment of the full product and demoed functionality on a bi-weekly cadence
+- Built the back end for managing cloud resources for government employees
+- Owned full-product deployment; demoed progress bi-weekly to stakeholders
 - Tools: Ansible, Flask, Terraform
 
 #work(
@@ -88,29 +88,41 @@ Senior software engineer with 10+ years across fintech, real estate, biochem res
   company: "URBN Outfitters Nuuly (PromptWorks)",
   dates: dates-helper(start-date: "Oct 2018", end-date: "Mar 2020"),
 )
-- Consulted on and built core product functionality for Nuuly, URBN's clothing rental service
-- Developed the front end and back end of warehouse and shipping administration software
+- Built core product functionality for Nuuly, URBN's clothing rental service
+- Shipped front-end and back-end of the warehouse and shipping administration software
 - Tools: Google Cloud, Kafka, Kotlin, Spring, JavaScript, TypeScript, Vue
 
 #work(
-  title: "Full-Stack Software Engineer",
+  title: "Software Engineer",
   location: "Chicago, IL",
-  company: "University of Chicago UrbanCCD",
+  company: "Argonne National Laboratory",
   dates: dates-helper(start-date: "May 2016", end-date: "Oct 2018"),
 )
-- Designed and built the search and streaming API for clients accessing Array of Things data, backed by AWS Lambda
-- Built and maintained infrastructure for Plenario to store and serve large volumes of real-time environmental data from Chicago's Array of Things sensors
-- Tools: AWS, Elixir, Flask, Phoenix, SQL, PostgreSQL, Python, Redis, SQLAlchemy, Vue
+- Designed and built the search + streaming API for clients querying Array of Things data, backed by AWS Lambda
+- Built and maintained Plenario infrastructure serving real-time environmental data from Chicago's Array of Things sensors
+- Expanded the geospatial query API through direct collaboration with civic clients and city government
+- Tools: AWS, Elixir, Flask, Phoenix, PostgreSQL, Python, Redis, SQLAlchemy, Vue
+
+#work(
+  title: "Research Assistant",
+  location: "Pittsburgh, PA",
+  company: "University of Pittsburgh, Department of Structural Biology",
+  dates: dates-helper(start-date: "Sep 2015", end-date: "Apr 2016"),
+)
+- Improved protein scoring functions used in virtual screening
+- Wrote protocols for training SVMs efficiently on large protein-ligand pose datasets
+- Built an example-selection algorithm that iteratively refined training sets to correct for docked-pose inaccuracies
+- Tools: Python, Jupyter, Genetic Algorithms
 
 == Volunteer Experience
 
 #work(
   title: "Volunteer",
-  location: "",
+  location: "Philadelphia, PA",
   company: "Juntos",
   dates: dates-helper(start-date: "Sep 2021", end-date: "Jan 2023"),
 )
-- Provided technical guidance and led the transition of the organization's case work management software to Airtable
+- Provided technical guidance; led the transition of case work management software to Airtable
 
 == Education
 
