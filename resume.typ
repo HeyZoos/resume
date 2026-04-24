@@ -30,20 +30,21 @@ Senior software engineer with 10+ years across fintech, real estate, biochem res
 #work(
   title: "Senior Software Engineer",
   location: "Philadelphia, PA",
-  company: "Nomura",
-  dates: dates-helper(start-date: "Mar 2024", end-date: "Present"),
+  company: "Nomura (formerly Macquarie Group)",
+  dates: dates-helper(start-date: "Sep 2025", end-date: "Present"),
 )
-- Rewrote Nomura's security master pipeline in Pandas, migrating it off LUSID; after a performance-focused second implementation, the DAG now processes hundreds of thousands of securities in minutes
-- Consolidated several standalone Lambdas into a single Airflow DAG, radically simplifying the upstream architecture and reducing operational surface area
-- Built, maintained, and safely refactored production Airflow pipelines, including backwards-compatible schema changes and idempotent task redesigns
+- Rewrote the investment team's security master pipeline with Airflow and Pandas, migrating it off LUSID and improving performance; the DAG now processes hundreds of thousands of securities in minutes, something the original pipeline was not capable of
+- Ported several AWS Lambdas over to Airflow DAGs, simplifying the upstream architecture
+- Led regular check-ins with stakeholders from the business to ensure alignment and performed thorough regression testing for data correctness and completeness
+- Maintained and refactored production Airflow ETL pipelines responsible for consolidating data from a variety of vendors and sources, implemented several idempotent task redesigns
 - Consistent on-call contributor: triaged and resolved pipeline incidents, and drove post-incident fixes into the DAG to prevent recurrence
-- Tools: Python, Pandas, Apache Airflow, AWS (Lambda, S3), LUSID, SQL
+- Tools: Python, Pandas, Apache Airflow, AWS (Lambda, S3), Microsoft SQL Server, Splunk
 
 #work(
   title: "Senior Full-Stack Software Engineer",
   location: "Philadelphia, PA",
   company: "Capital One",
-  dates: dates-helper(start-date: "Dec 2022", end-date: "Mar 2024"),
+  dates: dates-helper(start-date: "Dec 2022", end-date: "Jun 2025"),
 )
 - Led migration to a new KYC vendor, projected to save millions in operational costs while reducing concurrent vendor calls
 - Led integration of live selfie-based image fraud detection for bank customers, coordinating features and timelines across multiple teams
@@ -91,8 +92,6 @@ Senior software engineer with 10+ years across fintech, real estate, biochem res
 - Developed the front end and back end of warehouse and shipping administration software
 - Tools: Google Cloud, Kafka, Kotlin, Spring, JavaScript, TypeScript, Vue
 
-== Volunteer Experience
-
 #work(
   title: "Full-Stack Software Engineer",
   location: "Chicago, IL",
@@ -102,6 +101,8 @@ Senior software engineer with 10+ years across fintech, real estate, biochem res
 - Designed and built the search and streaming API for clients accessing Array of Things data, backed by AWS Lambda
 - Built and maintained infrastructure for Plenario to store and serve large volumes of real-time environmental data from Chicago's Array of Things sensors
 - Tools: AWS, Elixir, Flask, Phoenix, SQL, PostgreSQL, Python, Redis, SQLAlchemy, Vue
+
+== Volunteer Experience
 
 #work(
   title: "Volunteer",
